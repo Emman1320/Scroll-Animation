@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATG world scroll animation</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style//scrollbar.css" />
+    <link rel="stylesheet" href="./style//svg.css" />
+    <link rel="stylesheet" href="./style//left.css" />
+    <link rel="stylesheet" href="./style//right.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="hello"> -->
+    <div class="left">
+      <div class="left_row1">
+        <div class="left_mainHeader text-align-end">
+          <div id="page1_header">
+            <div class="page1_bigText overflow-hidden">
+              <div class="inside">25M+ Downloads</div>
+            </div>
+            <div class="page1_smallText overflow-hidden">
+              <div class="inside">on appstore & google playstore</div>
+            </div>
+          </div>
+          <div id="page2_header">
+            <div class="page2_smallText overflow-hidden">
+              <div class="inside">The Next Big</div>
+            </div>
+            <div class="page2_bigText overflow-hidden">
+              <div class="inside">Blockchain</div>
+            </div>
+            <div class="page2_smallText overflow-hidden text-align-end">
+              <div class="inside">Revolution</div>
+            </div>
+          </div>
+          <div id="page3_header">
+            <div class="page3_smallText overflow-hidden">
+              <div class="inside">Powered by advance</div>
+            </div>
+            <div class="page3_bigText overflow-hidden">
+              <div class="inside">
+                <img src="assets/nasa-mobile-app.png" alt="" />
+              </div>
+            </div>
+            <div class="page3_smallText overflow-hidden text-align-end">
+              <div class="inside">algorithms</div>
+            </div>
+          </div>
+          <div id="page4_header">
+            <div class="page2_smallText overflow-hidden">
+              <div class="inside">Redefining</div>
+            </div>
+            <div class="page2_bigText overflow-hidden">
+              <div class="inside">UX Strategy</div>
+            </div>
+            <div
+              class="page2_smallText overflow-hidden text-align-end"
+              style="margin-top: 1rem"
+            >
+              <div class="inside">and UI design</div>
+            </div>
+          </div>
+          <div id="page5_header" style="margin-left: -3rem">
+            <div class="page2_smallText overflow-hidden">
+              <div class="inside">Text Headline</div>
+            </div>
+            <div class="page2_bigText overflow-hidden">
+              <div class="inside">Text Headline</div>
+            </div>
+            <div
+              class="page2_smallText overflow-hidden text-align-end"
+              style="margin-top: 1rem"
+            >
+              <div class="inside">Footer headline</div>
+            </div>
+          </div>
+          <div id="page6_header" style="margin-left: -3rem">
+            <div class="page2_smallText overflow-hidden">
+              <div class="inside">Developing ERP Solution for</div>
+            </div>
+            <div class="page2_bigText overflow-hidden">
+              <div class="inside">Text Headline</div>
+            </div>
+            <div
+              class="page2_smallText overflow-hidden text-align-end"
+              style="margin-top: 1rem"
+            >
+              <div class="inside">in furniture industry</div>
+            </div>
+          </div>
+          <div id="page7_header">
+            <div class="page2_smallText overflow-hidden">
+              <div class="inside">Biggest Classifieds</div>
+            </div>
+            <div class="page2_bigText overflow-hidden">
+              <div class="inside">East Asia</div>
+            </div>
+            <div
+              class="page2_smallText overflow-hidden text-align-end"
+              style="margin-top: 1rem"
+            >
+              <div class="inside">Countries</div>
+            </div>
+          </div>
+        </div>
+        <!-- svg animation starts -->
+        <svg
+          version="1.1"
+          id="transring"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          viewBox="0 0 414 414"
+          style="enable-background: new 0 0 414 414"
+          xml:space="preserve"
+        >
+          <path
+            id="Transparent_Ring"
+            class="transrg"
+            style="
+              opacity: 0.4;
+              fill: none;
+              stroke: #ffffff;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              enable-background: new;
+            "
+            d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+                c-47.8,0-91-19.4-122.3-50.7"
+          ></path>
+
+          <path
+            id="Opaque_Ring"
+            class="transrgwht"
+            stroke-dasharray="0,1000"
+            style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke-dasharray: 0, 814;
+            "
+            d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+        c-47.8,0-91-19.4-122.3-50.7"
+          ></path>
+
+          <g id="Dots1" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill1"
+                d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots2" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill2"
+                d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots3" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill3"
+                d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots4" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill4"
+                d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots5" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill5"
+                d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots6" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill6"
+                d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"
+              ></path>
+            </g>
+          </g>
+          <g id="Dots7" class="dots-nav">
+            <g>
+              <path
+                class="dotsst dotsfill7"
+                d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
+              ></path>
+            </g>
+            <g>
+              <path
+                class="dot"
+                style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-miterlimit: 10;
+                "
+                d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"
+              ></path>
+            </g>
+          </g>
+        </svg>
+        <!-- svg animation ends -->
+      </div>
+      <div class="left_row2">
+        <div id="page1_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets//world-communication-awards-for-best-digital-experience.png"
+              alt=""
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 123</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">We are the best web development</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">company in the world</div>
+            </div>
+          </div>
+        </div>
+        <div id="page2_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets//world-communication-awards-for-best-digital-experience.png"
+              alt=""
+              style="opacity: 0"
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 243</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">We are the best web development</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">company in the world</div>
+            </div>
+          </div>
+        </div>
+        <div id="page3_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets//world-communication-awards-for-best-digital-experience.png"
+              alt=""
+              style="opacity: 0"
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 345</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">We are the best</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">web development company</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">in the world</div>
+            </div>
+          </div>
+        </div>
+        <div id="page4_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets//world-communication-awards-for-best-digital-experience.png"
+              alt=""
+              style="opacity: 0"
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 456</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">We are the best</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">web development company</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">in the world</div>
+            </div>
+          </div>
+        </div>
+        <div id="page5_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets//world-communication-awards-for-best-digital-experience.png"
+              alt=""
+              style="opacity: 0"
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 567</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">We are the best AR</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">Development company</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">in the world</div>
+            </div>
+          </div>
+        </div>
+        <div id="page6_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets//world-communication-awards-for-best-digital-experience.png"
+              alt=""
+              style="opacity: 0"
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 678</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">Best since 2017</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">We offer wide range of</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">web development and app development</div>
+            </div>
+          </div>
+        </div>
+        <div id="page7_info">
+          <div class="overflow-hidden">
+            <img
+              src="./assets/mobile-app-of-the-year-by-entrepreneur.png"
+              alt=""
+              class="inside"
+            />
+          </div>
+          <div class="left_infoHeader overflow-hidden">
+            <div class="inside">ABC 23478</div>
+          </div>
+          <div class="left_infoDesc">
+            <div class="overflow-hidden">
+              <div class="inside">We are the best AR</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">Development company</div>
+            </div>
+            <div class="overflow-hidden">
+              <div class="inside">in the world</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left_row3">
+        <div id="page1_footer">
+          <div class="viewCaseStudy">
+            View Case Study
+            <svg
+              width="24"
+              id="right-arrow"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+              />
+            </svg>
+          </div>
+          <div id="skip">SKIP</div>
+        </div>
+        <div id="page2_footer">
+          <div class="viewCaseStudy" style="opacity: 0.6">Coming Soon</div>
+          <div id="skip" style="opacity: 0">SKIP</div>
+        </div>
+        <div id="page3_footer">
+          <div class="viewCaseStudy" style="opacity: 0.6">Coming Soon</div>
+          <div id="skip" style="opacity: 0">SKIP</div>
+        </div>
+        <div id="page4_footer">
+          <div class="viewCaseStudy">
+            View Case Study
+            <svg
+              width="24"
+              id="right-arrow"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+              />
+            </svg>
+          </div>
+          <div id="skip" style="opacity: 0">SKIP</div>
+        </div>
+        <div id="page5_footer">
+          <div class="viewCaseStudy">
+            View Case Study
+            <svg
+              width="24"
+              id="right-arrow"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+              />
+            </svg>
+          </div>
+          <div id="skip" style="opacity: 0">SKIP</div>
+        </div>
+        <div id="page6_footer">
+          <div class="viewCaseStudy">
+            View Case Study
+            <svg
+              width="24"
+              id="right-arrow"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+              />
+            </svg>
+          </div>
+          <div id="skip" style="opacity: 0">SKIP</div>
+        </div>
+        <div id="page7_footer">
+          <div class="viewCaseStudy" style="opacity: 0.6">Coming Soon</div>
+          <div id="skip" style="opacity: 0">SKIP</div>
+        </div>
+      </div>
+      <!-- <div class="bg"></div> -->
+    </div>
+    <div class="right">
+      <div class="right_imgContainer" id="page1">
+        <div style="transform: translateX(10%)">
+          <img
+            class="right_img1"
+            src="./assets/nexgtv-entertainment-mobile-app-development.png"
+            alt=""
+          />
+          <img
+            class="right_img2"
+            src="./assets/nexgtv-mobile-app-ui-design.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="right_imgContainer" id="page2">
+        <div class="page2_col1">
+          <img
+            class="right_img1"
+            src="./assets/veme-blockchain-app-developed.png"
+            alt=""
+          />
+        </div>
+        <div class="page2_col2">
+          <img
+            class="right_img2"
+            src="./assets/veme-app-ui-design.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="right_imgContainer" id="page3">
+        <img
+          class="right_img1"
+          src="./assets/nasa-fitness-tracking-mobile-app.png"
+          alt=""
+        />
+        <img
+          class="right_img2"
+          src="./assets/measure-total-body-weight-through-fitness-app.png"
+          alt=""
+        />
+      </div>
+      <div class="right_imgContainer" id="page4">
+        <div style="display: flex">
+          <img class="pizza_box" src="./assets/pizza_box.png" alt="" />
+          <img
+            class="top_phone"
+            src="./assets/ux-strategy-for-mobile-app-devlopment.png"
+            alt=""
+          />
+          <img class="round_bread" src="./assets/dominos-bread.png" alt="" />
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <img class="bottom_phone" src="./assets/domi-img1.png" alt="" />
+          <img class="pastry" src="./assets/dominos-bread1.png" alt="" />
+        </div>
+      </div>
+      <div class="right_imgContainer" id="page5">
+        <div class="col1">
+          <img
+            class="col1_topPhone"
+            src="./assets/karavan-social-networking-app-screen.png"
+            alt=""
+          />
+          <img class="col1_bottomPhone" src="./assets/karavan_2.png" alt="" />
+        </div>
+        <div class="col2">
+          <img
+            class="col2_topPhone"
+            src="./assets/social-networking-app-case-study.png"
+            alt=""
+          />
+          <img
+            class="col2_bottomPhone"
+            src="./assets/karavan-social-networking-app-screen-2.png"
+            alt=""
+          />
+        </div>
+        <div class="col3">
+          <img
+            class="col3_centerPhone"
+            src="./assets/developers-for-social-media-app.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="right_imgContainer" id="page6">
+        <img src="./assets/interior.jpg" class="page6_background" alt="" />
+        <img
+          src="./assets/erp-app-development-service.png"
+          class="tablet_img"
+          alt=""
+        />
+      </div>
+      <div class="right_imgContainer" id="page7">
+        <img src="./assets/melltoo-img2.png" class="right_img1" alt="" />
+        <img src="./assets/melltoo-img1.png" class="right_img2" alt="" />
+      </div>
+    </div>
+    <div class="bg"></div>
+  </body>
+  <script src="./javascript/script.js"></script>
+</html>
