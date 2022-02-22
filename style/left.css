@@ -111,27 +111,21 @@
 .page4_animation_enterIn_forward .left_infoDesc > div:nth-child(2) .inside,
 .page5_animation_enterIn_forward .left_infoDesc > div:nth-child(2) .inside,
 .page6_animation_enterIn_forward .left_infoDesc > div:nth-child(2) .inside,
-.page7_animation_enterIn_forward .left_infoDesc > div:nth-child(2) .inside {
-  animation-delay: 0.4s !important;
-}
-.page1_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
-.page2_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
-.page3_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
-.page4_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
-.page5_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
-.page6_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
-.page7_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside {
-  animation-delay: 0.5s !important;
-}
-.page1_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
-.page2_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
-.page3_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
-.page4_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
-.page5_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
-.page6_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
-.page7_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside {
-  animation-delay: 0.5s !important;
-}
+.page7_animation_enterIn_forward .left_infoDesc > div:nth-child(2) .inside,
+#page1_header.page1_animation_enterIn_forward > div:nth-child(2) .inside,
+#page2_header.page2_animation_enterIn_forward > div:nth-child(2) .inside,
+#page3_header.page3_animation_enterIn_forward > div:nth-child(2) .inside,
+#page4_header.page4_animation_enterIn_forward > div:nth-child(2) .inside,
+#page5_header.page5_animation_enterIn_forward > div:nth-child(2) .inside,
+#page6_header.page6_animation_enterIn_forward > div:nth-child(2) .inside,
+#page7_header.page7_animation_enterIn_forward > div:nth-child(2) .inside,
+#page1_header.page1_animation_enterIn_backward > div:nth-child(2) .inside,
+#page2_header.page2_animation_enterIn_backward > div:nth-child(2) .inside,
+#page3_header.page3_animation_enterIn_backward > div:nth-child(2) .inside,
+#page4_header.page4_animation_enterIn_backward > div:nth-child(2) .inside,
+#page5_header.page5_animation_enterIn_backward > div:nth-child(2) .inside,
+#page6_header.page6_animation_enterIn_backward > div:nth-child(2) .inside,
+#page7_header.page7_animation_enterIn_backward > div:nth-child(2) .inside,
 .page1_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page2_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page3_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
@@ -141,9 +135,39 @@
 .page7_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside {
   animation-delay: 0.4s !important;
 }
-/* .left_infoDesc > div:nth-child(3) .inside {
-  animation-delay: 0.3s !important;
-} */
+.page1_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page2_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page3_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page4_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page5_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page6_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page7_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside,
+.page1_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page2_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page3_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page4_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page5_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page6_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page7_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+#page1_header.page1_animation_enterIn_backward > div:nth-child(1) .inside,
+#page2_header.page2_animation_enterIn_backward > div:nth-child(1) .inside,
+#page3_header.page3_animation_enterIn_backward > div:nth-child(1) .inside,
+#page4_header.page4_animation_enterIn_backward > div:nth-child(1) .inside,
+#page5_header.page5_animation_enterIn_backward > div:nth-child(1) .inside,
+#page6_header.page6_animation_enterIn_backward > div:nth-child(1) .inside,
+#page7_header.page7_animation_enterIn_backward > div:nth-child(1) .inside {
+  animation-delay: 0.55s !important;
+}
+#page1_header.page1_animation_enterIn_forward > div:nth-child(3) .inside,
+#page2_header.page2_animation_enterIn_forward > div:nth-child(3) .inside,
+#page3_header.page3_animation_enterIn_forward > div:nth-child(3) .inside,
+#page4_header.page4_animation_enterIn_forward > div:nth-child(3) .inside,
+#page5_header.page5_animation_enterIn_forward > div:nth-child(3) .inside,
+#page6_header.page6_animation_enterIn_forward > div:nth-child(3) .inside,
+#page7_header.page7_animation_enterIn_forward > div:nth-child(3) .inside {
+  animation-delay: 0.6s !important;
+}
+
 
 #page1_header,
 #page2_header,
