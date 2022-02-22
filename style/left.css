@@ -84,9 +84,12 @@
   font-size: 1.15rem;
   display: flex;
   cursor: pointer;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
   transition: gap 0.5s ease;
+}
+#page7_header {
+  margin-left: 3rem;
 }
 
 #viewCaseStudy:hover {
@@ -167,7 +170,6 @@
 #page7_header.page7_animation_enterIn_forward > div:nth-child(3) .inside {
   animation-delay: 0.6s !important;
 }
-
 
 #page1_header,
 #page2_header,

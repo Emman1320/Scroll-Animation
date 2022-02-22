@@ -23,4 +23,18 @@ body {
 }
 
 /* style="fill: rgb(0, 146, 255)" */
-
+@media (min-width: 1001px) {
+  .swiper {
+    display: none !important;
+  }
+}
+@media (max-width: 1000px) {
+  .left_mainHeader,
+  .left,
+  .left img,
+  .left_row3,
+  .right,
+  .right img {
+    display: none !important;
+  }
+}

@@ -9,7 +9,7 @@
 }
 .right_img1,
 .right_img2 {
-  width: 45%;
+  width: 82%;
   object-fit: contain;
 }
 .right_imgContainer {
@@ -24,6 +24,8 @@
 #page7 {
   /* display: none; */
   /* z-index: 100; */
+  transition: background 0.7s cubic-bezier(0.04, 0.46, 0.25, 1);
+  height: 100%;
   position: absolute;
 }
 #page1 .right_img1,
@@ -71,23 +73,24 @@
 #page4 {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 #page4 img {
   object-fit: contain;
 }
 #page4 .top_phone {
   width: 30%;
-  transform: translate(-15%, -90%);
+  transform: translate(0%, -97%);
 }
 #page4 .bottom_phone {
   width: 30%;
-  transform: translate(25%, 95%);
+  transform: translate(30%, 100%);
 }
 #page4 .pizza_box {
-  transform: translate(-94%, -30%);
+  transform: translate(-94%, -36%);
 }
 #page4 .round_bread {
-  transform: translate(-53%, -70%);
+  transform: translate(-30%, -88%);
 }
 #page4 .pastry {
   transform: translate(75%, 73%);
@@ -119,16 +122,16 @@
   width: 92%;
 }
 #page5 .col1_topPhone {
-  transform: translateY(-90%);
+  transform: translateY(-125%);
 }
 #page5 .col1_bottomPhone {
-  transform: translateY(92%);
+  transform: translateY(125%);
 }
 #page5 .col2_topPhone {
-  transform: translateY(-90%);
+  transform: translateY(-125%);
 }
 #page5 .col2_bottomPhone {
-  transform: translateY(93%);
+  transform: translateY(125%);
 }
 #page5 .col3_centerPhone {
   transform: translateX(104%);
@@ -249,11 +252,11 @@
   animation: page4_pizzaBox_rev 0.8s ease forwards;
 }
 #page4.page4_animation_rev .bottom_phone {
-  transform: translate(25%, -14%);
+  transform: translate(30%, -30%);
   animation: page4_bottomPhone_rev 0.8s ease forwards;
 }
 #page4.page4_animation_rev .round_bread {
-  transform: translate(-53%, -39%);
+  transform: translate(-30%, -39%);
   animation: page4_roundBread_rev 0.8s ease forwards;
 }
 #page4.page4_animation_rev .pastry {
@@ -337,7 +340,7 @@
 }
 @keyframes page1_img1 {
   0% {
-    transform: translate(20%, 120%);
+    transform: translate(20%, 140%);
   }
   100% {
     transform: translate(20%, 0%);
@@ -345,10 +348,10 @@
 }
 @keyframes page1_img2 {
   0% {
-    transform: translate(0%, 120%);
+    transform: translate(0%, 140%);
   }
   30% {
-    transform: translate(0%, 120%);
+    transform: translate(0%, 140%);
   }
   100% {
     transform: translate(0%, 0%);
@@ -359,7 +362,7 @@
     transform: translate(20%, 0%);
   }
   100% {
-    transform: translate(20%, 120%);
+    transform: translate(20%, 140%);
   }
 }
 @keyframes page1_img2_rev {
@@ -367,7 +370,7 @@
     transform: translate(0%, 0%);
   }
   100% {
-    transform: translate(0%, 120%);
+    transform: translate(0%, 140%);
   }
 }
 @keyframes page2_img1 {
@@ -407,7 +410,7 @@
     transform: translateY(130%);
   }
   100% {
-    transform: translateY(20%);
+    transform: translateY(15%);
   }
 }
 @keyframes page3_img2 {
@@ -415,12 +418,12 @@
     transform: translate(25%, -125%);
   }
   100% {
-    transform: translate(25%, -60%);
+    transform: translate(25%, -38%);
   }
 }
 @keyframes page3_img1_rev {
   0% {
-    transform: translateY(20%);
+    transform: translateY(15%);
   }
   100% {
     transform: translateY(130%);
@@ -428,7 +431,7 @@
 }
 @keyframes page3_img2_rev {
   0% {
-    transform: translate(25%, -60%);
+    transform: translate(25%, -38%);
   }
   100% {
     transform: translate(25%, -125%);
@@ -436,7 +439,7 @@
 }
 @keyframes page3_img2_rev {
   0% {
-    transform: translate(25%, -60%);
+    transform: translate(25%, -38%);
   }
   100% {
     transform: translate(25%, -125%);
@@ -445,34 +448,34 @@
 
 @keyframes page4_pizzaBox {
   0% {
-    transform: translate(-94%, -30%);
+    transform: translate(-94%, -36%);
   }
   100% {
-    transform: translate(-1%, -22%);
+    transform: translate(-1%, -36%);
   }
 }
 @keyframes page4_roundBread {
   0% {
-    transform: translate(-53%, -70%);
+    transform: translate(-30%, -88%);
   }
   100% {
-    transform: translate(-53%, -39%);
+    transform: translate(-30%, -49%);
   }
 }
 @keyframes page4_topPhone {
   0% {
-    transform: translate(-15%, -90%);
+    transform: translate(0%, -97%);
   }
   100% {
-    transform: translate(-15%, 31%);
+    transform: translate(0%, 22%);
   }
 }
 @keyframes page4_bottomPhone {
   0% {
-    transform: translate(25%, 95%);
+    transform: translate(30%, 100%);
   }
   100% {
-    transform: translate(25%, -14%);
+    transform: translate(30%, -30%);
   }
 }
 @keyframes page4_pastry {
@@ -480,45 +483,45 @@
     transform: translate(75%, 73%);
   }
   100% {
-    transform: translate(7%, 21%);
+    transform: translate(7%, 4%);
   }
 }
 
 @keyframes page4_pizzaBox_rev {
   0% {
-    transform: translate(-1%, -22%);
+    transform: translate(-1%, -36%);
   }
   100% {
-    transform: translate(-94%, -30%);
+    transform: translate(-94%, -36%);
   }
 }
 @keyframes page4_roundBread_rev {
   0% {
-    transform: translate(-53%, -39%);
+    transform: translate(-30%, -49%);
   }
   100% {
-    transform: translate(-53%, -70%);
+    transform: translate(-30%, -88%);
   }
 }
 @keyframes page4_topPhone_rev {
   0% {
-    transform: translate(-15%, 31%);
+    transform: translate(0%, 22%);
   }
   100% {
-    transform: translate(-15%, -90%);
+    transform: translate(0%, -97%);
   }
 }
 @keyframes page4_bottomPhone_rev {
   0% {
-    transform: translate(25%, -14%);
+    transform: translate(30%, -30%);
   }
   100% {
-    transform: translate(25%, 95%);
+    transform: translate(30%, 100%);
   }
 }
 @keyframes page4_pastry_rev {
   0% {
-    transform: translate(7%, 21%);
+    transform: translate(7%, 4%);
   }
   100% {
     transform: translate(75%, 73%);
@@ -526,7 +529,7 @@
 }
 @keyframes page5_col1_topPhone {
   0% {
-    transform: translateY(-90%);
+    transform: translateY(-125%);
   }
   100% {
     transform: translateY(-15%);
@@ -534,7 +537,7 @@
 }
 @keyframes page5_col1_bottomPhone {
   0% {
-    transform: translateY(92%);
+    transform: translateY(125%);
   }
   100% {
     transform: translateY(14%);
@@ -542,7 +545,7 @@
 }
 @keyframes page5_col2_topPhone {
   0% {
-    transform: translateY(-90%);
+    transform: translateY(-125%);
   }
   100% {
     transform: translateY(0%);
@@ -550,7 +553,7 @@
 }
 @keyframes page5_col2_bottomPhone {
   0% {
-    transform: translateY(93%);
+    transform: translateY(125%);
   }
   100% {
     transform: translateY(30%);
@@ -569,7 +572,7 @@
     transform: translateY(-15%);
   }
   100% {
-    transform: translateY(-90%);
+    transform: translateY(-125%);
   }
 }
 @keyframes page5_col1_bottomPhone_rev {
@@ -577,7 +580,7 @@
     transform: translateY(14%);
   }
   100% {
-    transform: translateY(92%);
+    transform: translateY(125%);
   }
 }
 @keyframes page5_col2_topPhone_rev {
@@ -585,7 +588,7 @@
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-90%);
+    transform: translateY(-125%);
   }
 }
 @keyframes page5_col2_bottomPhone_rev {
@@ -593,7 +596,7 @@
     transform: translateY(30%);
   }
   100% {
-    transform: translateY(93%);
+    transform: translateY(125%);
   }
 }
 @keyframes page5_col3_centerPhone_rev {
@@ -667,5 +670,28 @@
   }
   100% {
     transform: translate(0%, 100%);
+  }
+}
+@media (max-width: 1250px) {
+  #page4 > div:nth-child(2) {
+    transform: translateY(40%);
+  }
+  .page3_bigText .inside {
+    height: 82px;
+  }
+  .page1_bigText {
+    margin-left: -10rem;
+  }
+  .page2_bigText,
+  .page2_smallText {
+    margin-left: -2rem;
+  }
+  #page1_info > div:nth-child(1) img{
+   margin-top: -1px;
+  }
+}
+@media (max-width: 1200px) {
+  .page3_bigText .inside {
+    height: 84px;
   }
 }
