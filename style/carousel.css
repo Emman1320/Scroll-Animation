@@ -51,6 +51,7 @@
 }
 #page6_mobile .top {
   background: url("../assets/interior.jpg");
+  background-size: cover;
 }
 #page6_mobile .bottom {
   background: #012681;
@@ -152,10 +153,10 @@
 }
 #page3_mobile .top .img1 {
   object-fit: contain;
-  transform: scale(1.2) translateY(25%);
+  transform: scale(1.1) translateY(25%);
 }
 #page3_mobile .top .img2 {
-  transform: scale(1.15) translateY(-25%);
+  transform: scale(1.05) translate(-2%, -25%);
   object-fit: contain;
 }
 #page4_mobile .col1_mobile,
@@ -196,7 +197,7 @@
 #page4_mobile .phone1,
 #page4_mobile .phone2,
 #page4_mobile .phone3 {
-  width: 145px;
+  width: 170px;
 }
 #page4_mobile .phone2 {
   transform: translate(17%, 10%);
@@ -219,20 +220,20 @@
 }
 #page5_mobile .top img {
   object-fit: contain;
-  width: 150px;
+  width: 170px;
 }
 #page5_mobile .col1 {
-  transform: translateY(-34%);
+  transform: translateY(-32%);
 }
 #page5_mobile .col2 {
   transform: translateY(-3%);
 }
 #page5_mobile .col3 {
-  transform: translateY(23%);
+  transform: translateY(26%);
 }
 #page6_mobile .tablet_img {
   width: 100%;
-  transform: translateY(-10%);
+  min-width: 436px;
   object-fit: contain;
 }
 #page7_mobile .top {
@@ -244,9 +245,9 @@
   /* width: 50%; */
 }
 #page7_mobile .top .phone1 {
-  transform: scale(1.2) translate(12.5%, 17%);
+  transform: scale(1.12) translate(12.5%, 23%);
   z-index: 1;
 }
 #page7_mobile .top .phone2 {
-  transform: scale(1.2) translate(-12.5%, 28%);
+  transform: scale(1.12) translate(-12.5%, 34%);
 }
