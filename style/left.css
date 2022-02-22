@@ -123,6 +123,15 @@
 .page7_animation_enterIn_forward .left_infoDesc > div:nth-child(3) .inside {
   animation-delay: 0.5s !important;
 }
+.page1_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page2_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page3_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page4_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page5_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page6_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
+.page7_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside {
+  animation-delay: 0.4s !important;
+}
 .page1_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page2_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page3_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
@@ -130,15 +139,6 @@
 .page5_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page6_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page7_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside {
-  animation-delay: 0.4s !important;
-}
-.page1_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside,
-.page2_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside,
-.page3_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside,
-.page4_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside,
-.page5_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside,
-.page6_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside,
-.page7_animation_enterIn_backward .left_infoDesc > div:nth-child(3) .inside {
   animation-delay: 0.5s !important;
 }
 /* .left_infoDesc > div:nth-child(3) .inside {
