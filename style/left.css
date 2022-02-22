@@ -130,7 +130,7 @@
 .page5_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
 .page6_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside,
 .page7_animation_enterIn_backward .left_infoDesc > div:nth-child(1) .inside {
-  animation-delay: 0.4s !important;
+  animation-delay: 0.5s !important;
 }
 .page1_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page2_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
@@ -139,7 +139,7 @@
 .page5_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page6_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside,
 .page7_animation_enterIn_backward .left_infoDesc > div:nth-child(2) .inside {
-  animation-delay: 0.5s !important;
+  animation-delay: 0.4s !important;
 }
 /* .left_infoDesc > div:nth-child(3) .inside {
   animation-delay: 0.3s !important;
