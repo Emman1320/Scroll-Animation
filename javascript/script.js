@@ -95,7 +95,9 @@ if (window.innerWidth > 1000) {
             dotBorder[i].style.transitionDelay = "0.6s";
             dot[i].style.transition =
               "opacity 0.2s 0.6s ease-in-out, fill 0.2s 0.8s ease-in-out";
-            dotBorder[i].style.strokeWidth = "2px";
+            dotBorder[i].style.strokeWidth =
+              window.innerWidth <= 1368 ? "3px" : "2px";
+
             dot[i].style.opacity = 1;
             dot[i].style.fill = "rgb(0, 146, 255)";
           }

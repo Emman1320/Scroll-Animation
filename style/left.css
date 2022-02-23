@@ -333,6 +333,10 @@
   .left_row2 > div {
     padding-left: 3rem;
   }
+  #Transparent_Ring,
+  #Opaque_Ring {
+    stroke-width: 3px !important;
+  }
   .left_row3 > div {
     padding-left: 3rem;
   }
