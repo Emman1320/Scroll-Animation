@@ -672,7 +672,7 @@
     transform: translate(0%, 100%);
   }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
   #page4 > div:nth-child(2) {
     transform: translateY(40%);
   }
@@ -686,12 +686,18 @@
   .page2_smallText {
     margin-left: -2rem;
   }
-  #page1_info > div:nth-child(1) img{
-   margin-top: -1px;
+  #page1_info > div:nth-child(1) img {
+    margin-top: -1px;
   }
 }
 @media (max-width: 1200px) {
   .page3_bigText .inside {
     height: 84px;
+  }
+  .left_mainHeader .page1_bigText, .page2_bigText {
+    font-size: 3rem;
+  }
+  #page3_header {
+    margin-left: -2em;
   }
 }

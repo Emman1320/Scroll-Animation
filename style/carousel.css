@@ -164,7 +164,6 @@
 #page4_mobile .col3_mobile {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 33%;
 }
 #page4_mobile .col3_mobile {
@@ -180,7 +179,7 @@
 
 .dominos_masala {
   width: 60px;
-  transform: translate(0%, 0%);
+  transform: translate(60%, 0%);
 }
 .round_bread_mobile {
   width: 90px;
@@ -192,7 +191,7 @@
 }
 .pizza_box_mobile {
   width: 160px;
-  transform: translate(7%, -30%);
+  transform: translate(0%, -30%);
 }
 #page4_mobile .phone1,
 #page4_mobile .phone2,
@@ -250,4 +249,9 @@
 }
 #page7_mobile .top .phone2 {
   transform: scale(1.12) translate(-12.5%, 34%);
+}
+@media (max-width: 397px) {
+  #page5_mobile .top img {
+    width: 150px;
+  }
 }
